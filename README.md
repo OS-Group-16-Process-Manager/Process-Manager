@@ -1,27 +1,25 @@
-# Process-Manager
-This Process Manager is a Java-based utility designed to monitor system processes, track CPU usage, memory usage, and identify I/O bound processes.
+# Process Manager Application
 
-# Overview
-The Process Manager offers functionalities to:
+This Java application simulates a process manager UI displaying fake process details such as Process ID (PID), Name, CPU Usage (%), Memory Usage (bytes), and Bound Type (I/O Bound or CPU Bound).
 
-Retrieve Process Information: Obtain details about running processes, such as process name, Process ID (PID), CPU usage, and memory usage.
-Identify CPU and Memory Bound Processes: Analyze processes to identify CPU-bound and memory-bound applications.
-Track I/O Bound Processes: Monitor I/O utilization to identify processes with high I/O usage.
-# Installation
-Ensure you have Java installed on your system.
-Clone this repository to your local machine.
-# Usage
-Running the Process Manager
-Compile the Java files in the repository.
-Run the Main class to launch the Process Manager UI.
-# Retrieving Process Information
-Click on the "Retrieve Process Details" button in the UI to fetch and display process information.
-The table displayed contains:
-Process Name: Name of the running process.
-PID: Process ID for the corresponding process.
-CPU Usage (%): Percentage of CPU utilized by the process.
-Memory Usage (bytes): Amount of memory used by the process (in bytes).
-I/O Bound Analysis: Provides I/O Bound analysis for process
-# Identifying I/O Bound Processes
-The system tracks I/O usage but may require configuration for different OS environments.
-Currently, the Process Manager identifies CPU and memory-bound processes and provides real-time I/O bound analysis.
+## Prerequisites
+
+- Java Development Kit (JDK) installed on your system
+
+## How to Run
+
+1. **Compile the Code:**
+    - Open a terminal/command prompt.
+    - Navigate to the directory containing the `Main.java` file.
+    - Compile the Java file using the command: `javac Main.java`
+
+2. **Run the Application:**
+    - After successful compilation, run the application by executing the command: `java Main`
+    - The UI window titled "Process Manager" will open, displaying a table with process details.
+    - The table will refresh every 2 seconds with new randomly generated fake process details.
+
+## Understanding the Application
+
+- The application utilizes Swing, a Java GUI widget toolkit, to create the user interface.
+- It generates fake process details (PID, Name, CPU Usage, Memory Usage, Bound Type) using random data.
+- The table updates every 2 seconds to simulate dynamic process information.
